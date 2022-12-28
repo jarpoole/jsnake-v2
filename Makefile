@@ -1,14 +1,8 @@
-#
-#
-#
-#
-#
-#
 CC=g++
 
 EXE=jSnake
 
-CFLAGS= -c
+CFLAGS= -c -I ./inc 
 LFLAGS=-lcurses
 
 OBJDIR=obj
@@ -31,7 +25,7 @@ $(EXE):$(OBJS)
 	mkdir -p $(OBJDIR)
 	$(CC) -o $(EXE) $(OBJS) $(LFLAGS)
 
-$(OBJDIR)/%.o : %.cpp	
+$(OBJDIR)/%.o : src/%.cpp	
 	mkdir -p $(OBJDIR)
 	$(CC) $(CFLAGS) -o $@ $<
 
