@@ -1,6 +1,6 @@
 CC=g++
 
-EXE=jSnake
+EXE=jSnake.app
 
 CFLAGS= -c -I ./inc 
 LFLAGS=-lcurses

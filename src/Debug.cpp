@@ -9,7 +9,7 @@ static ofstream debugFile;
 Debug::Debug(){
 
 	ofstream debugFile;
-	debugFile.open("DEBUG");
+	debugFile.open("debug.tmp");
 	debugFile.close();
 
 }
