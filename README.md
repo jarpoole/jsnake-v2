@@ -1,4 +1,4 @@
-# jSnake
+# jsnake-v2
 
 ![play](./docs/play2.png)
 
